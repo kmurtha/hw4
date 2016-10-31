@@ -19,3 +19,4 @@ public class QueueClass {
     if (this.head == this.tail)
       this.tail = newHead;
     this.head = newHead;
+   
