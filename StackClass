@@ -1,0 +1,29 @@
+public class StackClass {
+  // properties
+  Node head;
+
+  // Constructors
+  StackClass() { 
+    this.head = null;
+  }
+  
+  // getters & setters
+  public Node getHead() {
+    return this.head;
+  }
+
+  public void setHead(Node newHead) {
+    this.head = newHead;
+  }
+
+  
+  
+  // Methods
+  // Adds node to the head of the list
+  public void push(int newInt) {
+    Node newNode = new Node(newInt);
+    
+    // if list is empty, 
+    //add data to new head node
+    if (this.isEmpty()) {
+      this.head = newNode;
