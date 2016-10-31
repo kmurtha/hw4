@@ -1,0 +1,21 @@
+public class QueueClass {
+  // properties
+  Node head;
+  Node tail;
+
+  // Constructors
+  QueueClass() { 
+    this.head = null;
+    this.tail = null;
+  }
+  // getters & setters
+  public Node getHead() {
+    return this.head;
+  }
+  public Node getTail() {
+    return this.tail;
+  }
+  public void setHead(Node newHead) {
+    if (this.head == this.tail)
+      this.tail = newHead;
+    this.head = newHead;
